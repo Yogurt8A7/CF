@@ -1,0 +1,14 @@
+import sys
+input = sys.stdin.readline
+
+t = int(input())
+for _ in range(t):
+    s = input().strip()
+    if s.endswith('po'):
+        print('FILIPINO')
+    elif s.endswith('mnida'):
+        print('KOREAN')
+    elif s.endswith('desu') or s.endswith('masu'):
+        print('JAPANESE')
+    else:
+        print('UNKNOWN')
